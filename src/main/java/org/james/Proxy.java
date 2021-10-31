@@ -1,6 +1,8 @@
 package org.james;
 
-public class Proxy implements Servidor {
+public class Proxy implements Servidor {    
+
+
     private Servidor serv;
 
     public Proxy(Servidor serv) {
@@ -9,6 +11,7 @@ public class Proxy implements Servidor {
 
     public void setServidor(Servidor serv) {
         ///// COMPLETAR ////////
+        this.serv=serv;
     }
 
     public Servidor getServidor() {

@@ -12,38 +12,21 @@ public class Fichero {
     private static int contador = 0;
 
     // constructor
-    public Fichero(String nombre) {
-
-        ///// COMPLETAR ////////
-    }
+    public Fichero(String nombre) {this.nombre=nombre;}
 
     // métodos
-    private static int getContador() {
-        return contador++;
-    }
+    private static int getContador() { return contador++;}
 
-    public String getId() {
-        return this.id;
-    }
+    public String getId() { return this.id="" + getContador();}
 
-    public String getNombre() {
-        return this.nombre;
-    }
+    public String getNombre() {return this.nombre;}
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+    public void setNombre(String nombre) {this.nombre = nombre;}
 
-    public Fecha getFechaCrea() {
-        return this.fechaCrea;
-    }
+    public Fecha getFechaCrea() {return this.fechaCrea;}
 
-    public File getFichero() {
-        return this.fichero;
-    }
+    public File getFichero() {return this.fichero;}
 
     @Override
-    public String toString() {
-        return id + " " + nombre + " # " + tamaño;
-    }
+    public String toString() {return id + " " + nombre + " # " + tamaño;}
 }
